@@ -10,6 +10,7 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Bem Vindo!!");
             try
             {
                 Console.Write("Room number: ");
@@ -47,6 +48,10 @@ namespace ConsoleApp4
             catch(FormatException e)
             {
                 Console.WriteLine("Erro no formato inserido: " + e.Message);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Erro inesperado: " + e.Message);
             }
         }
     }
